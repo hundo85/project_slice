@@ -14,8 +14,8 @@ bővíthető legyen egy hozzáadás gombbal.
   5.  jelöljük ki az összes törlés gombot (querrySelectorAll) majd for ciklussal végiglépkedünk rajtuk és 
       mindegyikre rakjunk rá egy click eseményt minden sorba a törlés gombokra
   6.  törlés függvény, a törlés gomb sorát törölje ki
-
 */
+
   let row = `
   <div class="rows">
     <input type="checkbox">
@@ -49,6 +49,7 @@ bővíthető legyen egy hozzáadás gombbal.
   //    mindegyikre rakjunk rá egy click eseményt minden sorba a törlés gombokra
   let delButtons = rootElement.querySelectorAll(".delete"); 
 
+  // 6.  törlés függvény, a törlés gomb sorát törölje ki
   function delItem(e){
     e.target.parentElement.remove();
   }
